@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Loading_a_CSV_to_HTML</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="js-tutorials.com_sample_file.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="js-tutorials.com_sample_file.csv" />
+  </ItemGroup>
+
+</Project>

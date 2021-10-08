@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">LOADING CSV TO HTML PAGE</h1>
+    <p>YouTube video <a href="https://www.youtube.com/watch?v=WrI19Qp6Uoc">here</a>.</p>
+    <p>Download the sourcecode <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDhaenAzRVJYWXlTMk40QXh1THMyV3VPcjR5UXxBQ3Jtc0tudzVKQ0diaGRUUmdBbExYOTFhYm5wWEZVUU1YeDF0SEw2ZnJPVVZNQWZES0tnZGRHdmNGclNmLTI3RHBkLWh5UzZkbzkyekFXNUdDczFmdU9rNmN1WnZlam9UVktyR1V4bGJhemZIX3pCM1JsdzUzaw&q=https%3A%2F%2Fdrive.google.com%2Fopen%3Fid%3D1IKROAMbrsiqRyJ-sz7UBJ0vGQ6-4xex4">here</a>.</p>
+</div>
+
+<br />
+<hr />
+<br />
+
+<script type="text/javascript" src="papaparse.min.js"></script>
+
+<input type="file" id="upload-csv" accept=".csv">
+
+<button id="btn-upload-csv">Read CSV</button>
+
+<table id="tbl-data">
+</table>
+
