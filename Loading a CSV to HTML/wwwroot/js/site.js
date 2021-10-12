@@ -6,12 +6,12 @@
 
         Papa.parse(document.getElementById('upload-csv').files[0], {
             download: true,
-            header: true,
+            header: false,
             complete: function (results) {
                 console.log(results);
-                /*
+                
                 let i = 0;
-                results.data.map((data, index)=> {
+                results.data.map((data, index) => {
                     if (i === 0) {
                         let table = document.getElementById('tbl-data');
                         generateTableHead(table, data);
@@ -21,7 +21,7 @@
                     }
                     i++;
                 });
-                */
+                
             }
         });
     });
